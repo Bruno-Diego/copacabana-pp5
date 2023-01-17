@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 html {
     height: 100%;
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background_cropped.JPEG') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -21,6 +23,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    font-family: 'DM Serif Display', serif;
 }
 
 .main-logo-link {
@@ -52,12 +55,20 @@ body {
     color: #000 !important;
 }
 
+.text-brown {
+    color: rgb(82, 56, 46) !important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
 
 .bg-black {
     background: #000 !important;
+}
+
+.bg-beige {
+    background: #D5B895;
 }
 
 .overlay {
