@@ -2,7 +2,7 @@
 
 ![](./docs/readme/responsive.png)
 
-[Access the Copacabana Jewellery Website here](https://copacabana.herokuapp.com/)(Ctrl + Click to open on a new tab)
+[Access the Copacabana Jewellery Website here](https://copacabana-jewellery.herokuapp.com/)(Ctrl + Click to open on a new tab)
 
 ## Table of Contents
 1. [**UX**](#ux)
