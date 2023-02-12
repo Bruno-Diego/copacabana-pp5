@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
-html {
+html, body {
     height: 100%;
 }
 
@@ -15,9 +15,19 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1 0 auto;
+.container-fluid {
+    display: flex;
+    flex-direction: column;
 }
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #eee;
+
+  }
 
 /* from Bulma */
 .icon {
