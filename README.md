@@ -37,11 +37,51 @@
 
 ## Purpose of the project
 
-Welcome fellow visitor,
+Welcome to the exquisite jewellery e-commerce website `Copacabana Jewellery`! 
 
-This is the Copacabana Jewellery website. It's an e-Commerce Store .
+- Product description:
 
-This website is made of the following sections:
+  This platform offers a wide range of high-quality and stylish jewellery pieces to our customers. Our online store features a collection of necklaces, bracelets, earrings, rings, and other jewellery and accessories, all designed to make you feel beautiful and confident.
+
+  With a focus on the latest fashion trends, our collections are constantly updated to keep you ahead of the curve. Whether you're looking for a classic piece to wear every day or something special for a special occasion, we have something to suit every style and taste.
+
+  We are committed to providing our customers with a seamless shopping experience, so we've made it easy for you to find exactly what you're looking for. Our user-friendly website is easy to navigate, with a variety of filters and sorting options to help you find the perfect piece. And with secure payment options, you can shop with confidence knowing that your personal and financial information is safe.
+
+  At our jewellery e-commerce website, we believe that everyone deserves to feel special. That's why we offer free shipping on all orders, and why we're dedicated to providing exceptional customer service. If you have any questions or concerns, our team of experts is always on hand to help.
+
+  So, if you're ready to add some sparkle to your life, start browsing our collection today! We can't wait to help you find the perfect piece of jewellery to complement your style.
+
+- Purpose of the project:
+
+  By creating a jewellery e-commerce website, I intent to demonstrate my ability to design and build a functional website that meets the needs of users. This project will provide the opportunity to apply what I have learned in the Diploma in Software Development (E-commerce Applications) course provided by Code Institute and demonstrate my understanding of web design and development concepts.
+
+  By including this project in my portfolio, I will be able to showcase my ability to work with e-commerce platforms, HTML, CSS, Javascript, Python and other technologies. It will also show my ability to understand user needs, design a user-friendly interface, and implement effective navigation and search features.
+
+  Overall, this portfolio project was made to showcase my practical skills and abilities. It will demonstrate my dedication to the Software Development, and to pursue a successful career in this field.
+
+The business goals for this website are:
+
+  1. Increase sales: The primary goal of the website is to drive sales and generate revenue. By offering a wide range of high-quality products, the website aims to attract customers and convert them into paying customers.
+
+  2. Enhance brand awareness: Another goal of the website is to increase brand awareness and build a strong online presence. By creating a visually appealing and user-friendly website, the business can attract more customers and increase brand recognition.
+
+  3. Provide excellent customer experience: The website should aim to provide an exceptional customer experience. This includes easy navigation, clear product information, and quick and secure checkout processes. The goal is to ensure that customers have a positive experience
+
+The target users are:
+
+  1. Fashion-conscious consumers: The website could target individuals who are interested in fashion and style, and who are looking for jewellery and accessories to enhance their personal appearance.
+
+  2. Gift shoppers: The website could also target individuals who are searching for gift ideas for friends, family, or loved ones. The website could offer a range of jewellery pieces suitable for different occasions, such as birthdays, anniversaries, and special events.
+
+  3. Busy professionals: The website could also target busy professionals who don't have the time or inclination to visit a physical jewellery store. By offering an easy-to-use online shopping platform, the website can make it convenient for busy individuals to purchase jewellery from the comfort of their own homes.
+
+  4. Budget-conscious consumers: The website could also target budget-conscious consumers who are looking for affordable jewellery options. The website could offer a range of products at different price points to meet the needs of different customers.
+
+  5. Eco-conscious consumers: The website could also target eco-conscious consumers who are looking for jewellery that is ethically and sustainably produced. By offering information on the materials and production processes used to create its products, the website can appeal to environmentally-aware consumers.
+
+By targeting these groups, the jewellery e-commerce website can attract a broad range of customers and increase its chances of success.
+
+This website was made of the following sections:
 
 1. Navigation bar with the title and menu.
 2. Presentation with hero and cal-to-action button.
@@ -52,10 +92,9 @@ This website is made of the following sections:
 7. Profile details page customizable by the user.
 8. Checkout page with the list of products choosen by the shopper.
 
+The layout has an intuitive structure with the navigation bar at the top, the footer at the bottom and the content in the area in between. The styling is consistent through all pages. The main navigation links also have a distinct color to catch the user's attention and encourage them to click them and the external links open in a new tab.
 
-The business goals for this application is ...
-
-The target users are ...
+The footer contains icons for Facebook, Instagram and Twitter, which link as expected to the website's and the creator's accounts on the respective platforms. The website is fully responsive and can be accessed on many different screens and is compatible with the most used browsers.
 
 ## User stories
 
@@ -141,7 +180,15 @@ Please note the actual website has changed slightly from these wireframes.
 
 ### ERD Diagrams
 
-All the data needed to store on a functioning portfolio tracker was considered in order to create the database. ...
+All the data needed to store on a functioning e-commerce website was considered in order to create the database.
+
+In the first for the [profiles](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/profiles/models.py#L9) models, the UserProfile model is related to the User model through a one-to-one relationship. This means that each User can have only one corresponding UserProfile and vice versa. The relationship is also defined as "on delete cascade," which means that if a User is deleted, the corresponding UserProfile will also be deleted. The attributes of the UserProfile model include fields for a user's default phone number, street address, town or city, county, postcode, and country.
+
+In the diagram made for the [products](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/products/models.py#L4) models, the Category model and the Product model have a one-to-many relationship. This means that each Category can have multiple Product objects, but each Product can only belong to one Category. The relationship is defined as "on delete set null," which means that if a Category is deleted, the corresponding Product objects will have their category field set to NULL. The attributes of the Category model include fields for the name and friendly name of the category, while the attributes of the Product model include fields for the category, sku, name, description, availability of sizes, price, rating, image URL, and image.
+
+In the [checkout](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/checkout/models.py#L13) models, there are two main classes: Order and OrderLineItem. Order has a one-to-many relationship with OrderLineItem, meaning that one order can have multiple order line items, but each order line item belongs to only one order. This relationship is represented by the ForeignKey field in the OrderLineItem model, which refers to the Order model. The related_name attribute on the Order model is used to access the order line items from the order instance.
+
+The UserProfile model is also referenced in the Order model through a ForeignKey field. This represents a many-to-one relationship, meaning that multiple orders can be associated with one user profile, but each order belongs to only one user profile.
 
 The relationship between the Portfolio and the Assets database is a zero-to-many as one portfolio could have zero or many assets within.
 
