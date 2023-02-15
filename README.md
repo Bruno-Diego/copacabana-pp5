@@ -224,6 +224,8 @@ The relationship between the Portfolio and the Assets database is a zero-to-many
     - Used to make the ERD diagram for the project.
   - [Balsamiq Wireframes](https://balsamiq.com/)
     - Used to create the wireframes for the project.
+  - [xml-sitemaps](https://www.xml-sitemaps.com/)
+    - Used to create the sitemaps for the project.
 
 ## Code validation
 
