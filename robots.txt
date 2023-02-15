@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /profiles/
+Disallow: /products/add/
+Disallow: /checkout/
+Sitemap: https://copacabana.herokuapp.com//sitemap.xml
