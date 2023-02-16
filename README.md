@@ -79,6 +79,16 @@ The target users are:
 
   5. Eco-conscious consumers: The website could also target eco-conscious consumers who are looking for jewellery that is ethically and sustainably produced. By offering information on the materials and production processes used to create its products, the website can appeal to environmentally-aware consumers.
 
+The requirements for an e-commerce business model:
+
+  - The inclusion of an e-commerce business model for a website can be necessary to facilitate online transactions and revenue generation through the sale of products.
+
+  - The purpose of this B2C (business-to-consumer) focused application is to determine the target audience and the specific marketing strategies used to promote and sell the products.
+
+  - The application is geared towards individual consumers, and the core business intent is to provide a user-friendly, enjoyable shopping experience that encourages customers to purchase the available products. Marketing strategies include social media advertising, influencer marketing, search engine optimization (SEO), and email marketing to build brand awareness and drive traffic to the website.
+
+  - Ultimately, the core business intents and marketing strategies for achieving the goals of increasing sales, enhancing brand awareness, and providing excellent customer experience include targeted marketing campaigns, social media marketing, personalized customer experience, customer reviews and feedback and loyalty programs and incentives. By implementing these strategies and focusing on increasing sales, enhancing brand awareness, and providing excellent customer experience, businesses can achieve their core business intents and achieve long-term success.
+
 By targeting these groups, the jewellery e-commerce website can attract a broad range of customers and increase its chances of success.
 
 This website was made of the following sections:
