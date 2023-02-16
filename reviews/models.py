@@ -7,7 +7,7 @@ from profiles.models import UserProfile
 
 
 class Review(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE,
+    product_title = models.ForeignKey(Product, on_delete=models.CASCADE,
                                 related_name='reviews')
     user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
@@ -17,5 +17,5 @@ class Review(models.Model):
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Review for {self.product.name} by \
+        return f'Review for {self.product_title.name} by \
             {self.user_profile.user.username}'

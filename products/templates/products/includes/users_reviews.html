@@ -1,0 +1,20 @@
+{% block content %}
+<div class="row mt-sm-1 py-1">
+  <div class="col-10 offset-1 mt-sm-5 py-5">
+    <div class="text-center card">
+        <div class="card-header">
+          Reviews from our customers
+        </div>
+        {% for review in reviews %}
+            <div class="card-body border-bottom">
+                <blockquote class="blockquote mb-0">
+                    <p>Review from: {{review.user_profile}}</p>
+                    <p class="blockquote-footer">{{review.body}}</p>
+                    <p class="blockquote">Rating: {{review.rating}}/5 <i class="fa-solid fa-star"></i></p>
+                </blockquote>
+            </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>
+{% endblock %}
