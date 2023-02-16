@@ -110,8 +110,16 @@
             </div>
         </div>
     </div>
+    <div class="container header-container container-fluid bg-beige py-3 mt-5 card text-center border-black font-weight-bold text-brown">
+        <div class="overlay"></div>
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <h1>Add a Review</h1>
+                <a href="{% url 'add_review' product.id %}" class="shop-now-button btn rounded-0 text-uppercase py-1">Click here!</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
