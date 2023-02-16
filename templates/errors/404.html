@@ -1,22 +1,29 @@
 {% extends 'base.html' %}
+
 {% load static %}
+
 {% block content %}
+    <!-- Header container -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
     </div>
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The page you are looking for isn't available
+
+    <!-- Main content container -->
+    <div class="container main-content-container">
+        <div class="row h-100 align-items-center">
+            <div class="col-7 col-md-6 mx-auto text-center">
+                <!-- Page heading -->
+                <h1 class="display-4 page-heading">
+                    We're sorry, this page isn't available
                 </h1>
+
+                <!-- Call-to-action button -->
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" 
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
-                                Return to shop
+                        <a href="{% url 'products' %}" class="btn btn-lg btn-primary">
+                            Return to the shop
                         </a>
                     </h4>
                 </div>
