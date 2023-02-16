@@ -4,9 +4,14 @@
 <html lang="en">
   <head>
     {% block meta %}
+    <!-- SEO -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Copacabana Jewellery offers high-quality, hand-crafted jewelry in a variety of styles. Explore our collections today.">
+    <meta name="keywords" content="jewelry, handmade, artisan, necklaces, bracelets, earrings, rings">
+    <meta name="author" content="Bruno Diego da Silva">
+    <meta name="robots" content="index, follow">
     {% endblock %}
 
     {% block extra_meta %}
@@ -40,6 +45,7 @@
     <title>Copacabana Jewellery {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+    <!-- Logo -->
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-beige pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -47,6 +53,7 @@
                     <h2 class="logo-font text-brown my-0"><strong>Copacabana</strong> Jewellery</h2>
                 </a>
             </div>
+            <!-- Search bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -70,6 +77,7 @@
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
+                        <!-- Login, Register and bag links -->
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
@@ -115,7 +123,7 @@
             </div>            
         </div>
     </header>
-
+    <!-- messages -->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
