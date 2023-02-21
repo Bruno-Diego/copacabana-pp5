@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 col-md-6 container-fluid bg-beige py-3 mt-5 card text-center border-black font-weight-bold text-brown">
+        <h1>{% if form.instance.pk %}Edit{% else %}Create{% endif %} Order Status</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="shop-now-button center btn my-1 rounded-0 text-uppercase py-1" type="submit">{% if form.instance.pk %}Save{% else %}Create{% endif %} Order Status</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

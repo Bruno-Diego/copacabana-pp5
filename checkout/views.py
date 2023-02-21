@@ -5,8 +5,8 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import OrderForm
-from .models import Order, OrderLineItem
+from .forms import OrderForm, OrderStatusForm
+from .models import Order, OrderLineItem, OrderStatus
 
 from products.models import Product
 from profiles.models import UserProfile
@@ -53,11 +53,13 @@ def checkout(request):
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
+        status = get_object_or_404(OrderStatus, id=1)
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
+            order.order_status = status
             order.save()
             for item_id, item_data in bag.items():
                 try:
@@ -186,3 +188,48 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def order_status_list(request):
+    status_list = OrderStatus.objects.all()
+    context = {'status_list': status_list}
+    return render(request, 'checkout/status/order_status_list.html', context)
+
+
+def order_status_create(request):
+    if request.method == 'POST':
+        form = OrderStatusForm(request.POST)
+        if form.is_valid():
+            order_status = form.save()
+            messages.success(request, 'Status created!')
+            return redirect('order_status_list')
+    else:
+        form = OrderStatusForm()
+    context = {'form': form}
+    return render(request, 'checkout/status/add_status.html', context)
+
+
+def order_status_edit(request, pk):
+    order_status = get_object_or_404(OrderStatus, pk=pk)
+    if request.method == 'POST':
+        form = OrderStatusForm(request.POST, instance=order_status)
+        if form.is_valid():
+            order_status = form.save()
+            messages.success(request, 'Status updated!')
+            return redirect(reverse('order_status_list'))
+    else:
+        form = OrderStatusForm(instance=order_status)
+    context = {'form': form}
+    return render(request, 'checkout/status/add_status.html', context)
+
+
+def order_status_delete(request, pk):
+    """ Delete a status """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('order_status_list'))
+
+    order_status = get_object_or_404(OrderStatus, pk=pk)
+    order_status.delete()
+    messages.success(request, 'Status deleted!')
+    return redirect(reverse('order_status_list'))

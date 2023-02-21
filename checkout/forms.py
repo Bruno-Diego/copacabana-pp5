@@ -1,5 +1,5 @@
 from django import forms
-from .models import Order
+from .models import Order, OrderStatus
 
 
 class OrderForm(forms.ModelForm):
@@ -37,3 +37,18 @@ class OrderForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
+
+
+class OrderStatusForm(forms.ModelForm):
+    class Meta:
+        model = OrderStatus
+        fields = ['status', 'description']
+        labels = {
+            'status': 'Status name',
+            'description': 'Status description',
+        }
+        widgets = {
+            'description': forms.Textarea(attrs={'class':
+                                          'align-top',
+                                          'rows': '5'}),
+        }
