@@ -1,10 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile
+from .models import UserProfile, PurchasedProduct
 from .forms import UserProfileForm
 
-from checkout.models import Order
+from checkout.models import Order, OrderLineItem
 
 
 @login_required
@@ -23,12 +23,13 @@ def profile(request):
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
-
+    purchases = PurchasedProduct.objects.filter(user_profile=profile)
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page': True
+        'on_profile_page': True,
+        'purchases': purchases,
     }
 
     return render(request, template, context)
@@ -49,3 +50,24 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def add_to_purchased(request, order_id, PurchasedForm):
+    profile = get_object_or_404(UserProfile, user=request.user)
+    line_item = OrderLineItem.objects.filter(order_id=order_id)
+    form = PurchasedForm()
+    if request.method == 'POST':
+        print(line_item)
+        for product in line_item:
+            purchased_product = form.save(commit=False)
+            purchased_product.user_profile = profile
+            purchased_product.product = product.product
+            purchased_product.product_name = product.product.name
+            purchased_product.product_size = product.product_size
+            purchased_product.save()
+            messages.success(request, 'Product added to purchased products successfully')
+            return print('Product added to purchased products successfully')
+    else:
+        return print('Failed to add product')
+    return render(request, 'checkout/checkout.html')

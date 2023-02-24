@@ -4,6 +4,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 from django_countries.fields import CountryField
+from products.models import Product
 
 
 class UserProfile(models.Model):
@@ -40,3 +41,15 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
+
+
+class PurchasedProduct(models.Model):
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product_name = models.CharField(max_length=255)
+    product_size = models.CharField(max_length=2, null=True, blank=True)
+    date_purchased = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user_profile.user} purchased\
+             {self.product_name} on {self.date_purchased}"

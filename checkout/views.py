@@ -10,7 +10,8 @@ from .models import Order, OrderLineItem, OrderStatus
 
 from products.models import Product
 from profiles.models import UserProfile
-from profiles.forms import UserProfileForm
+from profiles.forms import UserProfileForm, PurchasedForm
+from profiles.views import add_to_purchased
 from bag.contexts import bag_contents
 
 import stripe
@@ -91,6 +92,8 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
+            # Call add_to_purchased view to create PurchasedProduct objects
+            add_to_purchased(request, order.id, PurchasedForm)
             return redirect(reverse('checkout_success',
                                     args=[order.order_number]))
         else:
