@@ -77,7 +77,6 @@
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">Purchased Products History</h2>
-                {{purchases}}
             </div>
         </div>
         <div class="row">
@@ -88,6 +87,12 @@
                   <h5 class="card-title">{{ product.product.name }}</h5>
                   <p class="card-text lead mb-0 text-left font-weight-bold">$ {{ product.product.price }}</p>
                   <a href="{% url 'product_detail' product.product.id %}" class="shop-now-button center btn my-1 rounded-0 text-uppercase py-1">Buy again</a>
+                </div>
+            </div>
+            {% empty %}
+            <div class="row">
+                <div class="col">
+                    <h6 class="logo-font mb-4 ml-4">No history of previous purchased products.</h6>
                 </div>
             </div>
             {% endfor %}

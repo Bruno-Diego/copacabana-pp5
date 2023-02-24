@@ -56,18 +56,22 @@ def order_history(request, order_number):
 def add_to_purchased(request, order_id, PurchasedForm):
     profile = get_object_or_404(UserProfile, user=request.user)
     line_item = OrderLineItem.objects.filter(order_id=order_id)
+    purchased_list = PurchasedProduct.objects.filter(user_profile=profile)
     form = PurchasedForm()
     if request.method == 'POST':
-        print(line_item)
         for product in line_item:
-            purchased_product = form.save(commit=False)
-            purchased_product.user_profile = profile
-            purchased_product.product = product.product
-            purchased_product.product_name = product.product.name
-            purchased_product.product_size = product.product_size
-            purchased_product.save()
-            messages.success(request, 'Product added to purchased products successfully')
-            return print('Product added to purchased products successfully')
+            print(product.product.name)
+            print(purchased_list)
+            if PurchasedProduct.objects.filter(product_name=product.product.name).exists():
+                continue
+            else:
+                purchased_product = form.save(commit=False)
+                purchased_product.user_profile = profile
+                purchased_product.product = product.product
+                purchased_product.product_name = product.product.name
+                purchased_product.product_size = product.product_size
+                purchased_product.save()
+        return print('Product added to purchased products successfully')
     else:
         return print('Failed to add product')
-    return render(request, 'checkout/checkout.html')
+    return print('Purchase completed!')
