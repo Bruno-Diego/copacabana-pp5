@@ -263,15 +263,13 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
   ![](./docs/readme/flake8validation.png)
 
-
-
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
   - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a  good performance, assessibility, best practises and SEO scores, as you can see on this [report](./docs/readme/lighthousesummary.pdf).
     ![](./docs/readme/lighthouse.png)
 
 - [Color Contrast Accessibility Validator](https://color.a11y.com/)
-  - Allowed me to test the colour contrast of my webpage.
-    ![](./assets/docs/contrast.png)
+  - Allowed me to test the colour contrast of my webpage, all tests passed.
+    ![](./assets/docs/Color-Contrast-Accessibility-Validator.png)
 
 
 
