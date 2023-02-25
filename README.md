@@ -236,6 +236,8 @@ The relationship between the Portfolio and the Assets database is a zero-to-many
     - Used to create the wireframes for the project.
   - [xml-sitemaps](https://www.xml-sitemaps.com/)
     - Used to create the sitemaps for the project.
+  - [Burst](https://burst.shopify.com/)
+    - Used to get free images to use as products examples.
 
 ## Code validation
 
