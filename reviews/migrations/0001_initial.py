@@ -18,13 +18,22 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Review',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True,
+                                           serialize=False,
+                                           verbose_name='ID')),
                 ('title', models.CharField(max_length=100)),
                 ('body', models.TextField()),
-                ('rating', models.IntegerField(validators=[django.core.validators.MinValueValidator(1), django.core.validators.MaxValueValidator(5)])),
+                ('rating', models.IntegerField(validators=[
+                    django.core.validators.MinValueValidator(1),
+                    django.core.validators.MaxValueValidator(5)])),
                 ('date', models.DateTimeField(auto_now_add=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='products.product')),
-                ('user_profile', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='profiles.userprofile')),
+                ('product',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                   related_name='reviews',
+                                   to='products.product')),
+                ('user_profile',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                   to='profiles.userprofile')),
             ],
         ),
     ]

@@ -259,7 +259,10 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
   - No errors were found on the website when using [JSHint Validator](https://jshint.com/install/).
 
 - Python
-  - No syntax errors detected on python code accordingly to [Python syntax checker](https://extendsclass.com/python-tester.html)
+  - Used Flake8 for python syntax validation. There was some warnings about too long lines, and a couple of typos that is now taken care of. The warnings that is left is in files related to the boutiqueado project walktrought that based this project.
+
+  ![](./docs/readme/flake8validation.png)
+
 
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)

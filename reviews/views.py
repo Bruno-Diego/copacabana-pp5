@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
-from .models import Review
 from .forms import ReviewForm
 from products.models import Product
 from profiles.models import UserProfile

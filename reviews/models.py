@@ -8,7 +8,7 @@ from profiles.models import UserProfile
 
 class Review(models.Model):
     product_title = models.ForeignKey(Product, on_delete=models.CASCADE,
-                                related_name='reviews')
+                                      related_name='reviews')
     user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     body = models.TextField()

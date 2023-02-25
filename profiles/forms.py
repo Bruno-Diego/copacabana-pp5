@@ -1,6 +1,5 @@
 from django import forms
 from .models import UserProfile, PurchasedProduct
-from checkout.models import Order
 
 
 class UserProfileForm(forms.ModelForm):

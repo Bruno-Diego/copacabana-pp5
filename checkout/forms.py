@@ -49,6 +49,6 @@ class OrderStatusForm(forms.ModelForm):
         }
         widgets = {
             'description': forms.Textarea(attrs={'class':
-                                          'align-top',
-                                          'rows': '5'}),
+                                                 'align-top',
+                                                 'rows': '5'}),
         }

@@ -12,7 +12,10 @@ class ReviewForm(forms.ModelForm):
             'rating': 'Rating',
         }
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control border-black'}),
-            'body': forms.Textarea(attrs={'class': 'form-control border-black', 'rows': 5}),
-            'rating': forms.NumberInput(attrs={'class': 'form-control border-black col-1 mx-auto'}),
+            'title': forms.TextInput(attrs={'class': 'form-control \
+            border-black'}),
+            'body': forms.Textarea(attrs={'class': 'form-control \
+                border-black', 'rows': 5}),
+            'rating': forms.NumberInput(attrs={'class': 'form-control \
+                border-black col-1 mx-auto'}),
         }
