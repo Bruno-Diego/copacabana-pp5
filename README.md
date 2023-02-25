@@ -253,7 +253,6 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
 - JSHint
   - No errors were found on the website when using [JSHint Validator](https://jshint.com/install/).
-    ![](./assets/docs/jshint.png)
 
 - Python
   - No syntax errors detected on python code accordingly to [Python syntax checker](https://extendsclass.com/python-tester.html)
