@@ -248,15 +248,18 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/).
 
+  ![](./docs/readme/htmlvalidation.png)
+
 - CSS
   - No errors were found on the website when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/).
+
+  ![](./docs/readme/cssvalidation.png)
 
 - JSHint
   - No errors were found on the website when using [JSHint Validator](https://jshint.com/install/).
 
 - Python
   - No syntax errors detected on python code accordingly to [Python syntax checker](https://extendsclass.com/python-tester.html)
-  ![](./docs/readme/python-tester.png)
 
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
