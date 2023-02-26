@@ -151,32 +151,71 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 - These are the features included on this release:
 
-### Navbar
+### Header and Navbar
 
-- The navbar contains an elusive title and a menu with links to the home and registration or login page.
+- The website's top header contains an elusive title, a search bar and two icons to lead the shopper to registration/login and the bag with the current total value. The navbar has a menu with links to the website's products sections.
 
 ### Call-to-action button
 
-- The first card instigates the user to take action on the website and have a call-to-action button with a pulse effect to draw the user´s attention.
+- The main content displays a call-to-action button that attracts the shopper's attention and invites to start looking for the products.
 
-### Website information
+### Subscription
 
-- The following cards have usefull information about the website´s content. 
+- Across all the websites's pages, a card is displayed imediately after the main content inviting the shopper to subscribe to the website's newsletter. 
 
-### ...
+### Footer
 
+- The website's footer contains the main title, the contact information, links to the store social media accounts and a small text about the business. 
+
+### Search bar
+
+- The search bar can be used by the shopper to look for any specific products or categories without having to go through the whole list of products. 
+
+### Account
+
+- The user can safely register and login to his account with his personal profile and add his personal information to make purchases. 
+
+### Bag
+
+- The shopper can add to the bag all the products he intend to buy, see the total amount anytime in the top of the page and securely checkout at any time. 
+
+### Products list
+
+- The products list displays all the products of the store, but the shopper can select and filter using the navbar. 
+
+### Products details
+
+- The shopper can click on any product and be redirected to the details of that product and also view other customers comments about that product. 
+
+### Products details
+
+- The shopper can create reviews of the products he purchased to help other shoppers. 
+
+### Orders
+
+- The shopper can see a list of previous orders and purchased products in his profile page. 
+
+### Orders status
+
+- The shopper can follow up with his order checking the order status. 
+
+### Previous purchase
+
+- The shopper can view in his profile a list of previously purchased products. 
 
 ## Future features
 
-- For the future deployments to the website, I would like to implement ...
+- For the future deployments to the website, I would like to implement an orders management page to alow the shop owner manage the status of the orders and provide feedback to the shoppers.
 
-- I also would like to implement ...
+- I also would like to implement a login with social media and a 2-factor authentication for the shoppers to increase the website's security.
+
+- Another feature to be implemented is the possibility for the shoppers of editing his own previous comments about the products.
 
 ## Typography and color scheme
 
-- For the text, the main font used on the website was [Open Sans](https://fonts.google.com/specimen/Open+Sans) from [Google Fonts](https://fonts.google.com/). `....` [Font.](https://fonts.google.com/specimen/Open+Sans/about)
+- For the text, the main font used on the website was [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display) for the titles, headers and navbar, [Lato](https://fonts.google.com/specimen/Lato?query=Lato) for dropdowns, smaller menus and text in general. 
 
-- For the website´s colors I used a purple pallette based on the [materialize colors](https://materializecss.com/color.html):
+- For the website´s colors I used a brown and beige pallette:
 
 ![](./docs/readme/colors.png)
 
@@ -265,6 +304,7 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
   - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a  good performance, assessibility, best practises and SEO scores, as you can see on this [report](./docs/readme/lighthousesummary.pdf).
+
     ![](./docs/readme/lighthouse.png)
 
 - [Color Contrast Accessibility Validator](https://color.a11y.com/)
@@ -324,20 +364,16 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
 - The website is fully responsive and can be accessed on smartphones (width of 600px and smaller), tablets (width of 820px and smaller) and monitors of any size.
 
+  > The small overlay issues in the below images is a problem in the browser extension tool I used to capture the screenshots, this is not reflected in the actual project.
+
     * Small screens:
     
-      ![](./docs/readme/small1.png)
-
-      ![](./docs/readme/small2.png)
+      ![](./docs/readme/small.png)
 
     ---
     * Medium screens:
     
-      ![](./docs/readme/med1.png)
-
-      ![](./docs/readme/med2.png)
-      
-      ![](./docs/readme/med3.png)
+      ![](./docs/readme/medium.png)
 
     ---
     * Large screens:
