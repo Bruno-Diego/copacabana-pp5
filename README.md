@@ -338,8 +338,8 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
 - [Color Contrast Accessibility Validator](https://color.a11y.com/)
   - Allowed me to test the colour contrast of my webpage, all tests passed.
-    ![](./assets/docs/Color-Contrast-Accessibility-Validator.png)
 
+    ![](./docs/readme/Color-Contrast-Accessibility-Validator.png)
 
 
 ## Test cases
@@ -348,14 +348,47 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 ### EPIC | Website Viewing and Navigation
 
 1. As a **Shopper**, I can View a list of Products so that I can Select some to purchase.
+  - The shopper clicks on `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products in the website:
+
+    ![](./docs/readme/features/us1.png)
+
 2. As a **Shopper**, I can View individual product details so that I can Identify the price, description, product rating, product image and available sizes.
+  - The shopper clicks on the image of the product he intend to buy and will be redirected to the product details page, where he can see the desired details:
+
+    ![](./docs/readme/features/us2-1.png)
+
+    ![](./docs/readme/features/us2-2.png)
+
 3. As a **Shopper**, I can Quickly identify deals, clearance items and special offers so that I can Take advantage of special savings on products I'd like to purchase.
+  - The shopper clicks on `Special offers`, then `All Specials` again in the dropdown menu, to show a list of all available deals, clearance items and special offers in the website:
+
+    ![](./docs/readme/features/us2-2.png)
+
 4. As a **Shopper**, I can Easily view the total of my purchases at any time so that I can Avoid spending too much.
+  - The shopper can see in the top right a bag icon above the total value of the selected items added:
+
+    ![](./docs/readme/features/bag.png)
 
 ### EPIC | User Registration and Accounts
 
 5. As a **Website User** I can Easily register for an account so that I can Have a personal account and be able to view my profile.
+  - The shopper click in the top right an icon above the `My Account` text, then `Register` to be redirected to the registration page:
+
+    ![](./docs/readme/features/us5-1.png)
+
+  - In the registration page the shopper can add the details to the registration form and create an account clicking on `Sign Up`:
+
+    ![](./docs/readme/features/us5-2.png)
+
 6. As a **Website User** I can Easily login or logout so that I can Access my personal account information.
+  - The shopper click in the top right an icon above the `My Account` text, then `Login` to be redirected to the Login page:
+  
+    ![](./docs/readme/features/us6-1.png)
+
+  - In the Login page the shopper can add the details to the Sign In form and sign in to his account clicking on `Sign In`:
+
+    ![](./docs/readme/features/us6-2.png)
+
 7. As a **Website User** I can Easily recover my password in case I forget it so that I can Recover access to my account.
 8. As a **Website User** I can Receive an e-mail confirmation after registering so that I can Verify that my account registration was successful.
 9. As a **Website User** I can Have a personalized user profile so that I can View my personal order history and order confirmations, and save my payment information.
