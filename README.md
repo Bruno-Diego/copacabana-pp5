@@ -519,6 +519,7 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
     ![](./docs/readme/features/us21.png)
 
 ### EPIC | Admin and Store Manager - CRUD
+
 24. As a **Store owner** I can Add a product so that I can Add new items to my store.
   - The Store owner will click `My Account` and then `Product Management`:
 
@@ -621,7 +622,7 @@ Cloning your repository will allow you to download a local version of the reposi
 
 ## Via Heroku
 
-Deploying the project using Heroku:
+Deploying the project using Heroku and ElephantSQL:
 
    - Login to [Heroku](https://dashboard.heroku.com/apps) and Create a New App
    - Give the App a name, it must be unique, and select a region closest to you
@@ -678,14 +679,184 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
    - Ensure DEBUG is set to false in settings.py file or:
    - Set DEBUG to development with: development = os.environ.get('DEVELOPMENT', False) above it.
 
-## Via ElephantSQL
-
 ## Via AWS
+
+### Setting up AWS
+
+- Sign up or login to your aws [amazon account](https://aws.amazon.com/) on the top right by using the manage my account button
+- Then navigate to S3 to create a new bucket. This bucket will store our project files.
+- Select the closest region to you.
+- Selecting ACLs enabled and then bucket owner preferred are required in the object ownership section.
+- Uncheck the block public access box in the block public access section
+- Tick the acknowledge button to make the bucket public. Then click create bucket.
+
+- Select the properties tab from the bucket you just created
+- Find the static web hosting section and choose enable static web hosting.
+- Enter index.html and error.html for the index and error documents
+- Open the permissions tab and copy the ARN (amazon resource name).
+- Go to the bucket policy section, select Edit, and then choose Policy Generator.
+- The policy type will be S3 bucket policy, we want to allow all principles by adding * to the input and the actions will be get object.
+- Click "add statement" after pasting the ARN we copied from the previous page into the ARN input.
+- Click generate policy and copy the policy that displays in a new pop up.
+- Paste this policy into the bucket policy editor and make the following changes: Add a /* at the end of the resource value. Click save.
+-  Edit the the cross-origin resource sharing (CORS) and paste in the following text:
+
+        [
+            {
+                "AllowedHeaders": [
+                    "Authorization"
+                ],
+                "AllowedMethods": [
+                    "GET"
+                ],
+                "AllowedOrigins": [
+                    "*"
+                ],
+                "ExposeHeaders": []
+            }
+        ]
+- Edit the access control list (ACL) section. Click edit and enable list for everyone(public access) and accept the warning box.
+
+### Creating AWS groups, policies and users
+
+- To manage access to AWS services, go to IAM by clicking the services icon in the top right corner of the page. Click User Groups from the left-hand navigation menu, and then click the Create Group button in the top-right corner. This will establish the group in which our user will be included. 
+
+- Choose a name for your group and click the create policy button on the right. This will open a new page.
+
+- To import managed policy, click the link in the top right corner of the page after selecting the JSON tab.
+
+- Search for S3 and select the one called AmazonS3FullAccess, then click import.
+- To make a change to the resources, we need to make resources an array and then change the value for the resources. Instead of a * which allows all access, we want to paste in our ARN. followed by a comma, and then paste the ARN in again on the next line with /* at the end. This permits all operations on our bucket and all of its resources.
+
+- Click the next: tags button and then the next - review
+
+- Give the policy a name and description (e.g. copacabana-policy | Access to S3 bucket for seaside sewing static files.) Click the create policy button.
+
+- To attach policy click User Groups from the left-hand navigation menu, select the group, and then select the Permissions tab.
+
+- Select "attach policies" from the dropdown menu after clicking the add permissions button on the right.
+
+- Select the policy you just created and then click add permissions at the bottom.
+
+- Create a user for the group by clicking on the user link in the left hand navigation menu.
+
+- Click the add users button on the top right and giving our user a username (e.g. copacabana-staticfiles-user). 
+
+- Select programmatic access and then click the next: permissions button.
+
+- Add the user to the group you just created and then click next:tags button, next:review button and then create user button.
+
+- As we need to insert the user access key and secret access key into the Heroku config vars, you will now need to download the CSV file. You won't be able to view the CSV again, so be sure to download it now.
+
+### Connecting Django to our S3 bucket
+
+- Install boto3 and django storages 
+
+        pip3 install boto3
+        pip3 install django-storages
+
+- freeze them to the requirements.txt file
+
+        pip3 freeze > requirements.txt
+
+- Add storages to the installed apps in settings.py
+
+- Add the following code in settings.py to use our bucket
+
+        if 'USE_AWS' in os.environ:
+            AWS_S3_OBJECT_PARAMETERS = {
+                'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+                'CacheControl': 'max-age=9460800',
+            }
+            
+            AWS_STORAGE_BUCKET_NAME = 'enter your bucket name here'
+            AWS_S3_REGION_NAME = 'enter the region you selected here'
+            AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+            AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+            AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+            # Static and media files
+            STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+            STATICFILES_LOCATION = 'static'
+            DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+            MEDIAFILES_LOCATION = 'media'
+
+            # Override static and media URLs in production
+            STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+            MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+- We can now add these keys to our configuration variables in Heroku:
+
+    | KEY                       | VALUE         |
+    | -------------             | ------------- |
+    | `AWS_ACCESS_KEY_ID`       | PasteThe access key value from the amazon csv file downloaded in the last section         |
+    | `AWS_SECRET_ACCESS_KEY`   | Paste The secret access key from the amazon csv file downloaded in the last section         |
+    | `USE_AWS`                 | True         |
+
+- Remove the DISABLE_COLLECTSTATIC variable.
+
+- Create a file called custom_storages.py in the root directory.
+- import settings and S3Botot3Storage. Create a custom class for static files and one for media files.
+
+- Add the following code to file you created just now
+
+        """ Custom storages for AWS file storage. """
+        from django.conf import settings
+        from storages.backends.s3boto3 import S3Boto3Storage
+
+        class StaticStorage(S3Boto3Storage):
+            location = settings.STATICFILES_LOCATION
+
+        class MediaStorage(S3Boto3Storage):
+            location = settings.MEDIAFILES_LOCATION
+
+- In order to override the static and media URLs in production and update the app where to put static and media assets, add the following to settings.py.
+
+        STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+        STATICFILES_LOCATION = 'static'
+        DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+        MEDIAFILES_LOCATION = 'media'
+
+        STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+        MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+
+- Save everything, add, commit and push these changes to make a deployment to Heroku.
+
+- Navigate to S3 and open your bucket. 
+- Click the create folder button on the top right and naming the folder media. This is where we will save all out media files.
+
+### Stripe Setup
+
+- Log into Stripe, click developers and then API keys.
+- Copy the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) 
+- Log in to heroku and create 2 new variables in Heroku's config vars, publishable key is STRIPE_PUBLIC_KEY and the secret key is STRIPE_SECRET_KEY and paste values copied from stripe
+- To add webhooks go to the WebHooks link in the menu on the left and select the add endpoint option.
+- Add the URL for our deployed sites WebHook, give it a description and then click the add events button and select all events. Click Create endpoint.
+- add the WebHook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
+- Paste the following code in settings.py
+
+
+        STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+        STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+        STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 ## Credits
 
-- Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
-  - ...
+Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
+
+- The Code Institute **Boutique Ado** walkthrough project provided a lot of the site's original functionality, which was then modified, customized and expanded.
+
+- The code institute  **I Think Therefore I Blog** walkthrough were also consulted whenever needed.
+
+- The images for this project were taken from [Burst](https://burst.shopify.com/).
+
+- The Favicon for this project was made from [Favicon.io](https://favicon.io/).
+
+- The icons for this project were taken from the [Font Awesome](https://fontawesome.com/) libary.
+
+- The fonts for this project were taken from [Google Fonts](https://fonts.google.com/).
+
+- To better understand the code I also used several topics of the [Django documents](https://docs.djangoproject.com/en/4.1/) and countless posts from [Stack Overflow](https://stackoverflow.com/).
 
 ---
 ## Acknowledgements
