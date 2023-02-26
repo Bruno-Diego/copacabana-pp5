@@ -125,13 +125,15 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 - As a **Website User** I can Easily recover my password in case I forget it so that I can Recover access to my account.
 - As a **Website User** I can Receive an e-mail confirmation after registering so that I can Verify that my account registration was successful.
 - As a **Website User** I can Have a personalized user profile so that I can View my personal order history and order confirmations, and save my payment information.
+- As a **Website User** I can Add a review to a product so that I help other shoppers on future shoppings.
+- As a **Website User** I can review items previously bought so that I can quickly buy them again.
 
 
 ### EPIC | Sorting and Seraching
 
 - As a **Shopper**, I can Sort the list of available products so that I can Easily indentify the best rated, best priced and categorically sorted products.
 - As a **Shopper**, I can Sort a specific category of product so that I can Find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
-- As a **Shopper**, I can Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as 'clothing' or 'homeware'.
+- As a **Shopper**, I can Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as 'Jewellery' or 'Accessories'.
 - As a **Shopper**, I can Search for a product by name or description so that I can Find a specific product I'd like to purchase.
 - As a **Shopper**, I can Easily see what I've searched and the number of results so that I can Quickly decide whether the product I want is available.
 
@@ -390,32 +392,164 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
     ![](./docs/readme/features/us6-2.png)
 
 7. As a **Website User** I can Easily recover my password in case I forget it so that I can Recover access to my account.
+  - The user access the Login page and click on `Forgot Password`, then will be redirected to the `Password Reset`. The user provide his e-mail address and will receive an e-mail to create a new password:
+
+    ![](./docs/readme/features/us7.png)
+
 8. As a **Website User** I can Receive an e-mail confirmation after registering so that I can Verify that my account registration was successful.
+  - After creating a new account, the shopper will be redirected to a page asking to verify his e-mail addres and a message will be displayed confirming an e-mail was sent:
+
+    ![](./docs/readme/features/us5-3.png)
+
 9. As a **Website User** I can Have a personalized user profile so that I can View my personal order history and order confirmations, and save my payment information.
+  - The shopper clicks on the `My Account` icon, then `My Profile` and will be redirected to the `My Profile` page:
+
+    ![](./docs/readme/features/us9-1.png)
+  
+  - In `My Profile` page the shopper can view the order history and payment information:
+
+    ![](./docs/readme/features/us9-2.png)
+
+10. As a **Website User** I can Add a review to a product so that I can help other shoppers on future shoppings.
+  - The logged shopper clicks on the product's image and is directed to the product details page.
+
+    ![](./docs/readme/features/us-reviewbutton.png)
+
+  - The shopper can see the button `Add a review` and clicks it to be directed to a form with a Title, Review and Rating fields:
+
+    ![](./docs/readme/features/us-reviewform.png)
+  
+  - In product details page the shopper can see all reviews for that product:
+
+    ![](./docs/readme/features/usreviewmsg.png)
+
+11. As a **Website user** I can review items previously bought so that I can quickly buy them again.
+  - The shopper clicks on the `My Account` icon, then `My Profile` and will be redirected to the `My Profile` page:
+
+    ![](./docs/readme/features/us9-1.png)
+
+  - In `My Profile` page the shopper can view the previously purchased products:
+
+    ![](./docs/readme/features/us9-3.png)
 
 
 ### EPIC | Sorting and Seraching
 
-10. As a **Shopper**, I can Sort the list of available products so that I can Easily indentify the best rated, best priced and categorically sorted products.
-11. As a **Shopper**, I can Sort a specific category of product so that I can Find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
-12. As a **Shopper**, I can Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as 'clothing' or 'homeware'.
-13. As a **Shopper**, I can Search for a product by name or description so that I can Find a specific product I'd like to purchase.
-14. As a **Shopper**, I can Easily see what I've searched and the number of results so that I can Quickly decide whether the product I want is available.
+12. As a **Shopper**, I can Sort the list of available products so that I can Easily indentify the best rated, best priced and categorically sorted products.
+  - The shopper clicks on `All Products`, then select the desired form of sorting from the dropdown list:
+
+    ![](./docs/readme/features/us10.png)
+
+13. As a **Shopper**, I can Sort a specific category of product so that I can Find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
+  - The Shopper select a specific category from the navbar, or using the search bar, and the list of available products will be displayed.
+
+    ![](./docs/readme/features/us11-1.png)
+
+  - Then the Shopper use the dropdown menu on the top right corner to filter by Name.
+
+    ![](./docs/readme/features/us11-2.png)
+
+14. As a **Shopper**, I can Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as 'Jewellery' or 'Accessories'.
+  - The Shopper select a specific category from the navbar, or using the search bar, and the list of available products will be displayed.
+
+    ![](./docs/readme/features/us12.png)
+
+  - Then the Shopper use the dropdown menu on the top right corner to filter by Price, Rating, Name or Category.
+
+    ![](./docs/readme/features/us11-2.png)
+
+15. As a **Shopper**, I can Search for a product by name or description so that I can Find a specific product I'd like to purchase.
+  - The shopper clicks in the search bar on the top of the page and type the name, description or category to search:
+
+    ![](./docs/readme/features/us13.png)
+
+16. As a **Shopper**, I can Easily see what I've searched and the number of results so that I can Quickly decide whether the product I want is available.
+  - The shopper clicks in the search bar on the top of the page and search.
+  - The shopper can see the number of available products and a link to all products page in the top left corner of the products list:
+
+    ![](./docs/readme/features/us14.png)
 
 ### EPIC | Purchasing and Checkout - CRUD
 
-15. As a **Shopper** I can Easily select the size and quantity of a product when purchasing it so that Ensure I don't accidentaly select the wrong product, quantity or size.
-16. As a **Shopper** I can View itens in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
-17. As a **Shopper** I can Adjust the quantity of individual items in my bag so that I can Easily make changes to my purchase before checkout.
-18. As a **Shopper** I can Easily enter my payment information so that I can Checkout quickly and with no hassles.
-19. As a **Shopper** I can Feel my personal and payment information are safe and secure so that I can Confidently provide the needed information to make a purchase.
-20. As a **Shopper** I can View an order confirmation after checkout so that I can Verify that I haven't made any mistakes.
-21. As a **Shopper** I can Receive an e-mail confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records.
+17. As a **Shopper** I can Easily select the size and quantity of a product when purchasing it so that Ensure I don't accidentaly select the wrong product, quantity or size.
+  - The Shopper opens the Product details by clicking the image of the product.
+  - In the details page the Shopper can see below the description of the product the fields size and quantity. The size field is only displayed if the product has more than one size available.
+
+    ![](./docs/readme/features/us15.png)
+
+18. As a **Shopper** I can View itens in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
+  - The Shopper add a product to his shopping bag by clicking the `Add to bag` button in the details page for the desired product.
+  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where the itens list added to the bag, total price and details are displayed:
+
+    ![](./docs/readme/features/us16.png)
+
+19. As a **Shopper** I can Adjust the quantity of individual items in my bag so that I can Easily make changes to my purchase before checkout.
+  - The Shopper add a product to his shopping bag by clicking the `Add to bag` button in the details page for the desired product.
+  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where he can change the quantity of the product to be purchased:
+
+    ![](./docs/readme/features/us17.png)
+
+20. As a **Shopper** I can Easily enter my payment information so that I can Checkout quickly and with no hassles.
+  - The Shopper add a product to his shopping bag by clicking the `Add to bag` button in the details page for the desired product.
+  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where he can click `Secure Checkout` button to be directed to the checkout page:
+
+    ![](./docs/readme/features/us18-1.png)
+
+  - In the checkout page, the shopper can enter the payment information on the right hand side form:
+
+    ![](./docs/readme/features/us18-2.png)
+
+21. As a **Shopper** I can Feel my personal and payment information are safe and secure so that I can Confidently provide the needed information to make a purchase.
+  - In the checkout page, the shopper can see all the time the detailed information of his purchase including the products and values to feel safe and secure about the website:
+
+    ![](./docs/readme/features/us19.png)
+
+22. As a **Shopper** I can View an order confirmation after checkout so that I can Verify that I haven't made any mistakes.
+  - In the checkout page, the shopper clicks on the `Complete Order` button:
+
+    ![](./docs/readme/features/us20-1.png)
+
+  - The shopper will be redirected to the order details page with the order status and will receive a confirmation e-mail.
+
+    ![](./docs/readme/features/us20-2.png)
+
+23. As a **Shopper** I can Receive an e-mail confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records.
+  - The shopper will see displayed a success notification on the top right corner informing an e-mail was sent with the order details:
+
+    ![](./docs/readme/features/us21.png)
 
 ### EPIC | Admin and Store Manager - CRUD
-22. As a **Store owner** I can Add a product so that I can Add new items to my store.
-23. As a **Store owner** I can Edit/update a product so that I can Change products prices, descriptions, images and other product criteria.
-24. As a **Store owner** I can Delete a product so that I can Remove items that are no longer for sale.
+24. As a **Store owner** I can Add a product so that I can Add new items to my store.
+  - The Store owner will click `My Account` and then `Product Management`:
+
+    ![](./docs/readme/features/us22-1.png)
+
+  - The Store owner will be directed to the `Add product` page with a form to be filled with the details of the product to be added:
+
+    ![](./docs/readme/features/us22-2.png)
+
+25. As a **Store owner** I can Edit/update a product so that I can Change products prices, descriptions, images and other product criteria.
+  - The Store owner will click `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products in the website and the update button will be displayed next to the rating of each product.
+  - The Store owner will click on the image of any product to be directed to the `Product details` and the update button will be displayed again next to the rating of the product.
+
+    ![](./docs/readme/features/us23-1.png)
+
+  - The Store owner click the update button and will be directed to the form to edit the product:
+
+    ![](./docs/readme/features/us23-2.png)
+
+  - The Store owner click the `Update Product` button after making the desired changes and will be directed to the `Product Details` page with the changes made:
+  
+    ![](./docs/readme/features/us23-3.png)
+
+
+26. As a **Store owner** I can Delete a product so that I can Remove items that are no longer for sale.
+  - The Store owner will click `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products in the website and the Delete button will be displayed next to the rating of each product.
+  - The Store owner will click on the image of any product to be directed to the `Product details` and the Delete button will be displayed again next to the rating of the product.
+  - The Store owner clicks the delete button and the product will be removed and will not be displayed in the available products list anymore. Then the store owner will be directed to the list of available products.
+
+    ![](./docs/readme/features/us23-1.png)
+
 
 ## Fixed bugs
 
