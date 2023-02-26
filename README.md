@@ -2,6 +2,9 @@
 
 ![](./docs/readme/responsive.png)
 
+The website utilizes Stripe as the payment processor.
+This example project was not created to simulate actual credit card transactions. Use the test card number 4242 4242 4242 4242 with any future expiration date, any three-digit CVC, and any five-digit zip code to test the functionality.
+
 [Access the Copacabana Jewellery Website here](https://copacabana-jewellery.herokuapp.com/)(Ctrl + Click to open on a new tab)
 
 ## Table of Contents
@@ -155,53 +158,79 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 - The website's top header contains an elusive title, a search bar and two icons to lead the shopper to registration/login and the bag with the current total value. The navbar has a menu with links to the website's products sections.
 
+    ![](./docs/readme/features/headerandnavbar.png)
+
 ### Call-to-action button
 
 - The main content displays a call-to-action button that attracts the shopper's attention and invites to start looking for the products.
+
+    ![](./docs/readme/features/calltoaction.png)
 
 ### Subscription
 
 - Across all the websites's pages, a card is displayed imediately after the main content inviting the shopper to subscribe to the website's newsletter. 
 
+    ![](./docs/readme/features/subscribe.png)
+
 ### Footer
 
 - The website's footer contains the main title, the contact information, links to the store social media accounts and a small text about the business. 
+
+    ![](./docs/readme/features/footer.png)
 
 ### Search bar
 
 - The search bar can be used by the shopper to look for any specific products or categories without having to go through the whole list of products. 
 
+    ![](./docs/readme/features/searchbar.png)
+
 ### Account
 
 - The user can safely register and login to his account with his personal profile and add his personal information to make purchases. 
+
+    ![](./docs/readme/features/account.png)
 
 ### Bag
 
 - The shopper can add to the bag all the products he intend to buy, see the total amount anytime in the top of the page and securely checkout at any time. 
 
+    ![](./docs/readme/features/bag.png)
+
 ### Products list
 
 - The products list displays all the products of the store, but the shopper can select and filter using the navbar. 
+
+    ![](./docs/readme/features/productslistpng.png)
 
 ### Products details
 
 - The shopper can click on any product and be redirected to the details of that product and also view other customers comments about that product. 
 
-### Products details
+    ![](./docs/readme/features/productdetail.png)
+
+### Reviews
 
 - The shopper can create reviews of the products he purchased to help other shoppers. 
+
+    ![](./docs/readme/features/review.png)
 
 ### Orders
 
 - The shopper can see a list of previous orders and purchased products in his profile page. 
 
+    ![](./docs/readme/features/orders.png)
+
 ### Orders status
 
 - The shopper can follow up with his order checking the order status. 
 
+    ![](./docs/readme/features/status.png)
+
 ### Previous purchase
 
 - The shopper can view in his profile a list of previously purchased products. 
+
+    ![](./docs/readme/features/purchased.png)
 
 ## Future features
 
