@@ -554,7 +554,18 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
 ## Fixed bugs
 
-**...**
+### 500 error page view
+  - After creating a custom 500 page and trying to run the local server, I've had this error:
+
+    ![](./docs/readme/bug500page.png)
+
+  - Researching the code and checking the Django documentation, I've found that the custom function created to handle errors like this are  expected to match (request, exception) for all handlers except for handler500 which is expected to have only (request). So here was the bug:
+
+    ![](./docs/readme/bug500pageview.png)
+
+  - After removing the argument (request), the local server was running fine without any errors:
+
+    ![](./docs/readme/500pageview.png)
 
 
 ## Supported screens and browsers
