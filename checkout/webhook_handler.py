@@ -39,7 +39,6 @@ class StripeWH_Handler:
         """
         Handle a generic/unknown/unexpected webhook event
         """
-        self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Unhandled webhook received: {event["type"]}',
             status=200)

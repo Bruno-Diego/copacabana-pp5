@@ -60,8 +60,6 @@ def add_to_purchased(request, order_id, PurchasedForm):
     form = PurchasedForm()
     if request.method == 'POST':
         for product in line_item:
-            print(product.product.name)
-            print(purchased_list)
             if PurchasedProduct.objects.filter(product_name=product.product.name).exists():
                 continue
             else:
