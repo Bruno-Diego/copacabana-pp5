@@ -57,9 +57,9 @@ def add_to_purchased(request, order_id, PurchasedForm):
     profile = get_object_or_404(UserProfile, user=request.user)
     line_item = OrderLineItem.objects.filter(order_id=order_id)
     purchased_list = PurchasedProduct.objects.filter(user_profile=profile)
-    form = PurchasedForm()
-    if request.method == 'POST':
-        for product in line_item:
+    for product in line_item:
+        form = PurchasedForm()
+        if request.method == 'POST':
             if PurchasedProduct.objects.filter(product_name=product.product.name).exists():
                 continue
             else:
@@ -69,7 +69,6 @@ def add_to_purchased(request, order_id, PurchasedForm):
                 purchased_product.product_name = product.product.name
                 purchased_product.product_size = product.product_size
                 purchased_product.save()
-        return print('Product added to purchased products successfully')
-    else:
-        return print('Failed to add product')
+        else:
+            return print('Failed to add product')
     return print('Purchase completed!')
