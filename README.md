@@ -42,7 +42,7 @@ This example project was not created to simulate actual credit card transactions
 
 Welcome to the exquisite jewellery e-commerce website `Copacabana Jewellery`! 
 
-- Product description:
+- Product Description:
 
   This platform offers a wide range of high-quality and stylish jewellery pieces to our customers. Our online store features a collection of necklaces, bracelets, earrings, rings, and other jewellery and accessories, all designed to make you feel beautiful and confident.
 
@@ -56,11 +56,11 @@ Welcome to the exquisite jewellery e-commerce website `Copacabana Jewellery`!
 
 - Purpose of the project:
 
-  By creating a jewellery e-commerce website, I intent to demonstrate my ability to design and build a functional website that meets the needs of users. This project will provide the opportunity to apply what I have learned in the Diploma in Software Development (E-commerce Applications) course provided by Code Institute and demonstrate my understanding of web design and development concepts.
+  By creating a jewellery e-commerce website, I intend to demonstrate my ability to design and build a functional website that meets the needs of users. This project will provide the opportunity to apply what I have learned in the Diploma in Software Development (E-commerce Applications) course provided by Code Institute and demonstrate my understanding of web design and development concepts.
 
   By including this project in my portfolio, I will be able to showcase my ability to work with e-commerce platforms, HTML, CSS, Javascript, Python and other technologies. It will also show my ability to understand user needs, design a user-friendly interface, and implement effective navigation and search features.
 
-  Overall, this portfolio project was made to showcase my practical skills and abilities. It will demonstrate my dedication to the Software Development, and to pursue a successful career in this field.
+  Overall, this portfolio project was made to showcase my practical skills and abilities. It will demonstrate my dedication to Software Development, and to pursue a successful career in this field.
 
 The business goals for this website are:
 
@@ -98,14 +98,14 @@ This website was made of the following sections:
 
 1. Navigation bar with the title and menu.
 2. Presentation with hero and cal-to-action button.
-3. Resgistration and login page.
+3. Registration and login page.
 4. List of products that can be purchased by the shopper.
 5. Details page for every product.
 6. Possibility to create, edit and delete products.
 7. Profile details page customizable by the user.
-8. Checkout page with the list of products choosen by the shopper.
+8. Checkout page with the list of products chosen by the shopper.
 
-The layout has an intuitive structure with the navigation bar at the top, the footer at the bottom and the content in the area in between. The styling is consistent through all pages. The main navigation links also have a distinct color to catch the user's attention and encourage them to click them and the external links open in a new tab.
+The layout has an intuitive structure with the navigation bar at the top, the footer at the bottom and the content in the area in between. The styling is consistent throughout all pages. The main navigation links also have a distinct color to catch the user's attention and encourage them to click them and the external links open in a new tab.
 
 The footer contains icons for Facebook, Instagram and Twitter, which link as expected to the website's and the creator's accounts on the respective platforms. The website is fully responsive and can be accessed on many different screens and is compatible with the most used browsers.
 
@@ -129,9 +129,9 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 - As a **Website User** I can review items previously bought so that I can quickly buy them again.
 
 
-### EPIC | Sorting and Seraching
+### EPIC | Sorting and Searching
 
-- As a **Shopper**, I can Sort the list of available products so that I can Easily indentify the best rated, best priced and categorically sorted products.
+- As a **Shopper**, I can Sort the list of available products so that I can Easily identify the best-rated, best-priced and categorically sorted products.
 - As a **Shopper**, I can Sort a specific category of product so that I can Find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
 - As a **Shopper**, I can Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as 'Jewellery' or 'Accessories'.
 - As a **Shopper**, I can Search for a product by name or description so that I can Find a specific product I'd like to purchase.
@@ -139,9 +139,9 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ### EPIC | Purchasing and Checkout - CRUD
 
-- As a **Shopper** I can Easily select the size and quantity of a product when purchasing it so that Ensure I don't accidentaly select the wrong product, quantity or size.
-- As a **Shopper** I can View itens in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
-- As a **Shopper** I can Adjust the quantity of individual items in my bag so that I can Easily make changes to my purchase before checkout.
+- As a **Shopper** I can Easily select the size and quantity of a product when purchasing it so that Ensure I don't accidentally select the wrong product, quantity or size.
+- As a **Shopper** I can View items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
+- As a **Shopper** I can Adjust the number of individual items in my bag so that I can Easily make changes to my purchase before checkout.
 - As a **Shopper** I can Easily enter my payment information so that I can Checkout quickly and with no hassles.
 - As a **Shopper** I can Feel my personal and payment information are safe and secure so that I can Confidently provide the needed information to make a purchase.
 - As a **Shopper** I can View an order confirmation after checkout so that I can Verify that I haven't made any mistakes.
@@ -149,16 +149,16 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ### EPIC | Admin and Store Manager - CRUD
 - As a **Store owner** I can Add a product so that I can Add new items to my store.
-- As a **Store owner** I can Edit/update a product so that I can Change products prices, descriptions, images and other product criteria.
+- As a **Store owner** I can Edit/update a product so that I can Change product prices, descriptions, images and other product criteria.
 - As a **Store owner** I can Delete a product so that I can Remove items that are no longer for sale.
 
 ## Features
 
-- These are the features included on this release:
+- These are the features included in this release:
 
 ### Header and Navbar
 
-- The website's top header contains an elusive title, a search bar and two icons to lead the shopper to registration/login and the bag with the current total value. The navbar has a menu with links to the website's products sections.
+- The website's top header contains an elusive title, a search bar and two icons to lead the shopper to registration/login and the bag with the current total value. The navbar has a menu with links to the website's product sections.
 
     ![](./docs/readme/features/headerandnavbar.png)
 
@@ -170,13 +170,13 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ### Subscription
 
-- Across all the websites's pages, a card is displayed imediately after the main content inviting the shopper to subscribe to the website's newsletter. 
+- Across all the website pages, a card is displayed immediately after the main content inviting the shopper to subscribe to the website's newsletter. 
 
     ![](./docs/readme/features/subscribe.png)
 
 ### Footer
 
-- The website's footer contains the main title, the contact information, links to the store social media accounts and a small text about the business. 
+- The website's footer contains the main title, contact information, links to the store's social media accounts and a small text about the business. 
 
     ![](./docs/readme/features/footer.png)
 
@@ -194,7 +194,7 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ### Bag
 
-- The shopper can add to the bag all the products he intend to buy, see the total amount anytime in the top of the page and securely checkout at any time. 
+- The shopper can add to the bag all the products he intends to buy, see the total amount anytime at the top of the page and securely checkout at any time. 
 
     ![](./docs/readme/features/bag.png)
 
@@ -206,7 +206,7 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ### Products details
 
-- The shopper can click on any product and be redirected to the details of that product and also view other customers comments about that product. 
+- The shopper can click on any product and be redirected to the details of that product and also view other customers' comments about that product. 
 
     ![](./docs/readme/features/productdetail.png)
 
@@ -224,7 +224,7 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ### Orders status
 
-- The shopper can follow up with his order checking the order status. 
+- The shopper can follow up with his order by checking the order status. 
 
     ![](./docs/readme/features/status.png)
 
@@ -236,17 +236,17 @@ The footer contains icons for Facebook, Instagram and Twitter, which link as exp
 
 ## Future features
 
-- For the future deployments to the website, I would like to implement an orders management page to alow the shop owner manage the status of the orders and provide feedback to the shoppers.
+- For future deployments to the website, I would like to implement an orders management page to allow the shop owner to manage the status of the orders and provide feedback to the shoppers.
 
-- I also would like to implement a login with social media and a 2-factor authentication for the shoppers to increase the website's security.
+- I also would like to implement a login with social media and 2-factor authentication for the shoppers to increase the website's security.
 
-- Another feature to be implemented is the possibility for the shoppers of editing his own previous comments about the products.
+- Another feature to be implemented is the possibility for the shoppers of editing their previous comments about the products.
 
 ## Typography and color scheme
 
 - For the text, the main font used on the website was [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display) for the titles, headers and navbar, [Lato](https://fonts.google.com/specimen/Lato?query=Lato) for dropdowns, smaller menus and text in general. 
 
-- For the website´s colors I used a brown and beige pallette:
+- For the website´s colors I used a brown and beige palette:
 
 ![](./docs/readme/colors.png)
 
@@ -262,15 +262,15 @@ Please note the actual website has changed slightly from these wireframes.
 
 All the data needed to store on a functioning e-commerce website was considered in order to create the database.
 
-In the first for the [profiles](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/profiles/models.py#L9) models, the UserProfile model is related to the User model through a one-to-one relationship. This means that each User can have only one corresponding UserProfile and vice versa. The relationship is also defined as "on delete cascade," which means that if a User is deleted, the corresponding UserProfile will also be deleted. The attributes of the UserProfile model include fields for a user's default phone number, street address, town or city, county, postcode, and country. The PurchasedProduct model has a foreign key relationship with the built-in Django UserProfile model, which represents the user profile. The `product` field is a string representing the name of the item that the user purchased, the `product_name` and `product_size` fields are name and size respectvely, and the date_purchased field is a DateTimeField that automatically sets the date and time when the purchase was made.
+In the first for the [profiles](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/profiles/models.py#L9) models, the UserProfile model is related to the User model through a one-to-one relationship. This means that each User can have only one corresponding UserProfile and vice versa. The relationship is also defined as "on delete cascade," which means that if a User is deleted, the corresponding UserProfile will also be deleted. The attributes of the UserProfile model include fields for a user's default phone number, street address, town or city, county, postcode, and country. The PurchasedProduct model has a foreign key relationship with the built-in Django UserProfile model, which represents the user profile. The `product` field is a string representing the name of the item that the user purchased, the `product_name` and `product_size` fields are name and size respectively, and the date_purchased field is a DateTimeField that automatically sets the date and time when the purchase was made.
 
 In the diagram made for the [products](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/products/models.py#L4) models, the Category model and the Product model have a one-to-many relationship. This means that each Category can have multiple Product objects, but each Product can only belong to one Category. The relationship is defined as "on delete set null," which means that if a Category is deleted, the corresponding Product objects will have their category field set to NULL. The attributes of the Category model include fields for the name and friendly name of the category, while the attributes of the Product model include fields for the category, sku, name, description, availability of sizes, price, rating, image URL, and image.
 
-In the [checkout](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/checkout/models.py#L13) models, there are two main classes: Order and OrderLineItem. Order has a one-to-many relationship with OrderLineItem, meaning that one order can have multiple order line items, but each order line item belongs to only one order. This relationship is represented by the ForeignKey field in the OrderLineItem model, which refers to the Order model. The related_name attribute on the Order model is used to access the order line items from the order instance.
+In the [checkout](https://github.com/Bruno-Diego/copacabana-pp5/blob/01401d1372602f2de10733b9f58cb5020269f137/checkout/models.py#L13) models, there are two main classes: Order and OrderLineItem. The Order model has a one-to-many relationship with OrderLineItem, meaning that one order can have multiple order line items, but each order line item belongs to only one order. This relationship is represented by the ForeignKey field in the OrderLineItem model, which refers to the Order model. The related_name attribute on the Order model is used to access the order line items from the order instance.
 
 The UserProfile model is also referenced in the Order model through a ForeignKey field. This represents a many-to-one relationship, meaning that multiple orders can be associated with one user profile, but each order belongs to only one user profile.
 
-The `OrderStatus` is a model that defines a status for an order. It has two fields, the `status` with a CharField with a maximum length of 50 characters that stores the status of an order, such as "Pending", "Shipped", "Delivered", etc. and `description` with a TextField that stores a description of the status. This model is used to keep track of the status of an order.
+The `OrderStatus` is a model that defines the status of an order. It has two fields, the `status` with a CharField with a maximum length of 50 characters that stores the status of an order, such as "Pending", "Shipped", "Delivered", etc. and `description` with a TextField that stores a description of the status. This model is used to keep track of the status of an order.
 
 In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e73783983604437a1ced4e8e3440c/reviews/models.py#L9) model, it has a foreign key to the Product model to associate reviews with the products they belong to. It also has a foreign key to the UserProfile model to associate reviews with the users who created them. The title field is a short string to summarize the review, and the body field is a longer text field for the review itself. The rating field is an integer between 1 and 5, and the date field is a datetime field to track when the review was created.
 
@@ -293,13 +293,13 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
   - [Gitpod](https://www.gitpod.io/)
     - Used as the development environment.
   - [Git](https://git-scm.com/)
-    - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+    - Used for version control by utilizing  the Gitpod terminal to commit to Git and Push to GitHub.
   - [Bootstrap](https://getbootstrap.com/)
-    - Used to as the front-end framework.
+    - Used as the front-end framework.
   - [Favicon.io](https://favicon.io/)
-    - Used to create favicon for my website.
+    - Used to create a favicon for my website.
   - [Grammarly](https://www.grammarly.com/)
-    - Used to fix the grammar errors across the project.
+    - Used to fix grammar errors across the project.
   - [Django](https://www.djangoproject.com/)
     - Used as Python-based free and open-source web framework that follows the model–template–views architectural pattern to develop the basic back-end of the project.
   - [SmartDraw](https://www.smartdraw.com/)
@@ -309,7 +309,7 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
   - [xml-sitemaps](https://www.xml-sitemaps.com/)
     - Used to create the sitemaps for the project.
   - [Burst](https://burst.shopify.com/)
-    - Used to get free images to use as products examples.
+    - Used to get free images to use as product examples.
 
 ## Code validation
 
@@ -329,17 +329,17 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
   - No errors were found on the website when using [JSHint Validator](https://jshint.com/install/).
 
 - Python
-  - Used Flake8 for python syntax validation. There was some warnings about too long lines, and a couple of typos that is now taken care of. The warnings that is left is in files related to the boutiqueado project walktrought that based this project.
+  - Used Flake8 for python syntax validation. There were some warnings about too long lines and a couple of typos that are now taken care of. The warnings that are left are in files related to the boutiqueado project walkthrough inspired this project.
 
   ![](./docs/readme/flake8validation.png)
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-  - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a  good performance, assessibility, best practises and SEO scores, as you can see on this [report](./docs/readme/lighthousesummary.pdf).
+  - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a performance, accessibility, best practices and SEO scores, as you can see in this [report](./docs/readme/lighthousesummary.pdf).
 
     ![](./docs/readme/lighthouse.png)
 
 - [Color Contrast Accessibility Validator](https://color.a11y.com/)
-  - Allowed me to test the colour contrast of my webpage, all tests passed.
+  - Allowed me to test the color contrast of my webpage, all tests passed.
 
     ![](./docs/readme/Color-Contrast-Accessibility-Validator.png)
 
@@ -350,19 +350,19 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 ### EPIC | Website Viewing and Navigation
 
 1. As a **Shopper**, I can View a list of Products so that I can Select some to purchase.
-  - The shopper clicks on `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products in the website:
+  - The shopper clicks on `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products on the website:
 
     ![](./docs/readme/features/us1.png)
 
 2. As a **Shopper**, I can View individual product details so that I can Identify the price, description, product rating, product image and available sizes.
-  - The shopper clicks on the image of the product he intend to buy and will be redirected to the product details page, where he can see the desired details:
+  - The shopper clicks on the image of the product he intends to buy and will be redirected to the product details page, where he can see the desired details:
 
     ![](./docs/readme/features/us2-1.png)
 
     ![](./docs/readme/features/us2-2.png)
 
 3. As a **Shopper**, I can Quickly identify deals, clearance items and special offers so that I can Take advantage of special savings on products I'd like to purchase.
-  - The shopper clicks on `Special offers`, then `All Specials` again in the dropdown menu, to show a list of all available deals, clearance items and special offers in the website:
+  - The shopper clicks on `Special offers`, then `All Specials` again in the dropdown menu, to show a list of all available deals, clearance items and special offers on the website:
 
     ![](./docs/readme/features/us2-2.png)
 
@@ -374,30 +374,30 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 ### EPIC | User Registration and Accounts
 
 5. As a **Website User** I can Easily register for an account so that I can Have a personal account and be able to view my profile.
-  - The shopper click in the top right an icon above the `My Account` text, then `Register` to be redirected to the registration page:
+  - The shopper clicks in the top right an icon above the `My Account` text, then `Register` to be redirected to the registration page:
 
     ![](./docs/readme/features/us5-1.png)
 
-  - In the registration page the shopper can add the details to the registration form and create an account clicking on `Sign Up`:
+  - On the registration page the shopper can add the details to the registration form and create an account by clicking on `Sign Up`:
 
     ![](./docs/readme/features/us5-2.png)
 
 6. As a **Website User** I can Easily login or logout so that I can Access my personal account information.
-  - The shopper click in the top right an icon above the `My Account` text, then `Login` to be redirected to the Login page:
+  - The shopper clicks in the top right an icon above the `My Account` text, then `Login` to be redirected to the Login page:
   
     ![](./docs/readme/features/us6-1.png)
 
-  - In the Login page the shopper can add the details to the Sign In form and sign in to his account clicking on `Sign In`:
+  - In the Login page the shopper can add the details to the Sign In form and sign in to his account by clicking on `Sign In`:
 
     ![](./docs/readme/features/us6-2.png)
 
 7. As a **Website User** I can Easily recover my password in case I forget it so that I can Recover access to my account.
-  - The user access the Login page and click on `Forgot Password`, then will be redirected to the `Password Reset`. The user provide his e-mail address and will receive an e-mail to create a new password:
+  - The user access the Login page and click on `Forgot Password`, then will be redirected to the `Password Reset`. The user provides his e-mail address and will receive an e-mail to create a new password:
 
     ![](./docs/readme/features/us7.png)
 
 8. As a **Website User** I can Receive an e-mail confirmation after registering so that I can Verify that my account registration was successful.
-  - After creating a new account, the shopper will be redirected to a page asking to verify his e-mail addres and a message will be displayed confirming an e-mail was sent:
+  - After creating a new account, the shopper will be redirected to a page asking to verify his e-mail address and a message will be displayed confirming an e-mail was sent:
 
     ![](./docs/readme/features/us5-3.png)
 
@@ -410,16 +410,16 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
     ![](./docs/readme/features/us9-2.png)
 
-10. As a **Website User** I can Add a review to a product so that I can help other shoppers on future shoppings.
+10. As a **Website User** I can Add a review to a product so that I can help other shoppers with future shoppings.
   - The logged shopper clicks on the product's image and is directed to the product details page.
 
     ![](./docs/readme/features/us-reviewbutton.png)
 
-  - The shopper can see the button `Add a review` and clicks it to be directed to a form with a Title, Review and Rating fields:
+  - The shopper can see the button `Add a review` and clicks it to be directed to a form with Title, Review and Rating fields:
 
     ![](./docs/readme/features/us-reviewform.png)
   
-  - In product details page the shopper can see all reviews for that product:
+  - On the product details page the shopper can see all reviews for that product:
 
     ![](./docs/readme/features/usreviewmsg.png)
 
@@ -433,9 +433,9 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
     ![](./docs/readme/features/us9-3.png)
 
 
-### EPIC | Sorting and Seraching
+### EPIC | Sorting and Searching
 
-12. As a **Shopper**, I can Sort the list of available products so that I can Easily indentify the best rated, best priced and categorically sorted products.
+12. As a **Shopper**, I can Sort the list of available products so that I can Easily indentify the best-rated, best-priced and categorically sorted products.
   - The shopper clicks on `All Products`, then select the desired form of sorting from the dropdown list:
 
     ![](./docs/readme/features/us10.png)
@@ -445,67 +445,67 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
     ![](./docs/readme/features/us11-1.png)
 
-  - Then the Shopper use the dropdown menu on the top right corner to filter by Name.
+  - Then the Shopper uses the dropdown menu on the top right corner to filter by Name.
 
     ![](./docs/readme/features/us11-2.png)
 
 14. As a **Shopper**, I can Sort multiple categories of products simultaneously so that I can Find the best-priced or best-rated products across broad categories, such as 'Jewellery' or 'Accessories'.
-  - The Shopper select a specific category from the navbar, or using the search bar, and the list of available products will be displayed.
+  - The Shopper selects a specific category from the navbar, or using the search bar, and the list of available products will be displayed.
 
     ![](./docs/readme/features/us12.png)
 
-  - Then the Shopper use the dropdown menu on the top right corner to filter by Price, Rating, Name or Category.
+  - Then the Shopper uses the dropdown menu on the top right corner to filter by Price, Rating, Name or Category.
 
     ![](./docs/readme/features/us11-2.png)
 
 15. As a **Shopper**, I can Search for a product by name or description so that I can Find a specific product I'd like to purchase.
-  - The shopper clicks in the search bar on the top of the page and type the name, description or category to search:
+  - The shopper clicks in the search bar on the top of the page and types the name, description or category to search:
 
     ![](./docs/readme/features/us13.png)
 
 16. As a **Shopper**, I can Easily see what I've searched and the number of results so that I can Quickly decide whether the product I want is available.
-  - The shopper clicks in the search bar on the top of the page and search.
+  - The shopper clicks on the search bar at the top of the page and searches.
   - The shopper can see the number of available products and a link to all products page in the top left corner of the products list:
 
     ![](./docs/readme/features/us14.png)
 
 ### EPIC | Purchasing and Checkout - CRUD
 
-17. As a **Shopper** I can Easily select the size and quantity of a product when purchasing it so that Ensure I don't accidentaly select the wrong product, quantity or size.
+17. As a **Shopper** I can Easily select the size and quantity of a product when purchasing it so that Ensure I don't accidentally select the wrong product, quantity or size.
   - The Shopper opens the Product details by clicking the image of the product.
-  - In the details page the Shopper can see below the description of the product the fields size and quantity. The size field is only displayed if the product has more than one size available.
+  - On the details page the Shopper can see, below the description of the product, the size and quantity fields. The size field is only displayed if the product has more than one size available.
 
     ![](./docs/readme/features/us15.png)
 
-18. As a **Shopper** I can View itens in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
-  - The Shopper add a product to his shopping bag by clicking the `Add to bag` button in the details page for the desired product.
-  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where the itens list added to the bag, total price and details are displayed:
+18. As a **Shopper** I can View items in my bag to be purchased so that I can Identify the total cost of my purchase and all items I will receive.
+  - The Shopper adds a product to his shopping bag by clicking the `Add to bag` button on the details page for the desired product.
+  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where the items added to the bag, total price and details are displayed:
 
     ![](./docs/readme/features/us16.png)
 
-19. As a **Shopper** I can Adjust the quantity of individual items in my bag so that I can Easily make changes to my purchase before checkout.
-  - The Shopper add a product to his shopping bag by clicking the `Add to bag` button in the details page for the desired product.
+19. As a **Shopper** I can Adjust the number of individual items in my bag so that I can Easily make changes to my purchase before checkout.
+  - The Shopper adds a product to his shopping bag by clicking the `Add to bag` button on the details page for the desired product.
   - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where he can change the quantity of the product to be purchased:
 
     ![](./docs/readme/features/us17.png)
 
 20. As a **Shopper** I can Easily enter my payment information so that I can Checkout quickly and with no hassles.
-  - The Shopper add a product to his shopping bag by clicking the `Add to bag` button in the details page for the desired product.
-  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where he can click `Secure Checkout` button to be directed to the checkout page:
+  - The Shopper adds a product to his shopping bag by clicking the `Add to bag` button on the details page for the desired product.
+  - The Shopper then clicks on the bag icon on the top right corner of the page, then is re-directed to the `Shopping Bag` page, where he can click the `Secure Checkout` button to be directed to the checkout page:
 
     ![](./docs/readme/features/us18-1.png)
 
-  - In the checkout page, the shopper can enter the payment information on the right hand side form:
+  - On the checkout page, the shopper can enter the payment information on the right-hand side form:
 
     ![](./docs/readme/features/us18-2.png)
 
 21. As a **Shopper** I can Feel my personal and payment information are safe and secure so that I can Confidently provide the needed information to make a purchase.
-  - In the checkout page, the shopper can see all the time the detailed information of his purchase including the products and values to feel safe and secure about the website:
+  - On the checkout page, the shopper can see all the time the detailed information of his purchase including the products and values to feel safe and secure about the website:
 
     ![](./docs/readme/features/us19.png)
 
 22. As a **Shopper** I can View an order confirmation after checkout so that I can Verify that I haven't made any mistakes.
-  - In the checkout page, the shopper clicks on the `Complete Order` button:
+  - On the checkout page, the shopper clicks on the `Complete Order` button:
 
     ![](./docs/readme/features/us20-1.png)
 
@@ -514,7 +514,7 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
     ![](./docs/readme/features/us20-2.png)
 
 23. As a **Shopper** I can Receive an e-mail confirmation after checking out so that I can Keep the confirmation of what I've purchased for my records.
-  - The shopper will see displayed a success notification on the top right corner informing an e-mail was sent with the order details:
+  - The shopper will see displayed a success notification in the top right corner informing an e-mail was sent with the order details:
 
     ![](./docs/readme/features/us21.png)
 
@@ -530,22 +530,22 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
     ![](./docs/readme/features/us22-2.png)
 
 25. As a **Store owner** I can Edit/update a product so that I can Change products prices, descriptions, images and other product criteria.
-  - The Store owner will click `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products in the website and the update button will be displayed next to the rating of each product.
+  - The Store owner will click `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products on the website and the update button will be displayed next to the rating of each product.
   - The Store owner will click on the image of any product to be directed to the `Product details` and the update button will be displayed again next to the rating of the product.
 
     ![](./docs/readme/features/us23-1.png)
 
-  - The Store owner click the update button and will be directed to the form to edit the product:
+  - The Store owner clicks the update button and will be directed to the form to edit the product:
 
     ![](./docs/readme/features/us23-2.png)
 
-  - The Store owner click the `Update Product` button after making the desired changes and will be directed to the `Product Details` page with the changes made:
+  - The Store owner clicks the `Update Product` button after making the desired changes and will be directed to the `Product Details` page with the changes made:
   
     ![](./docs/readme/features/us23-3.png)
 
 
 26. As a **Store owner** I can Delete a product so that I can Remove items that are no longer for sale.
-  - The Store owner will click `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products in the website and the Delete button will be displayed next to the rating of each product.
+  - The Store owner will click `All Products`, then `All Products` again in the dropdown menu, to show a list of all available products on the website and the Delete button will be displayed next to the rating of each product.
   - The Store owner will click on the image of any product to be directed to the `Product details` and the Delete button will be displayed again next to the rating of the product.
   - The Store owner clicks the delete button and the product will be removed and will not be displayed in the available products list anymore. Then the store owner will be directed to the list of available products.
 
@@ -559,7 +559,7 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
     ![](./docs/readme/bug500page.png)
 
-  - Researching the code and checking the Django documentation, I've found that the custom function created to handle errors like this are  expected to match (request, exception) for all handlers except for handler500 which is expected to have only (request). So here was the bug:
+  - Researching the code and checking the Django documentation, I've found that the custom function created to handle errors like this are expected to match (request, exception) for all handlers except for handler500 which is expected to have only (request). So here was the bug:
 
     ![](./docs/readme/bug500pageview.png)
 
@@ -572,7 +572,7 @@ In the [Reviews](https://github.com/Bruno-Diego/copacabana-pp5/blob/447de9c8f95e
 
 - The website is fully responsive and can be accessed on smartphones (width of 600px and smaller), tablets (width of 820px and smaller) and monitors of any size.
 
-  > The small overlay issues in the below images is a problem in the browser extension tool I used to capture the screenshots, this is not reflected in the actual project.
+  > The small overlay issues in the below images are a problem with the browser extension tool I used to capture the screenshots, this is not reflected in the actual project.
 
     * Small screens:
     
@@ -607,14 +607,14 @@ The project deployment was based on the [Code Institute Gitpod Full Template](ht
   -  Committing your work should be done often and should have clear/explanatory messages, use the following commands to make your commits:
     - `git add .`: adds all modified files to a staging area
     - `git commit -m "A message explaining your commit"`: commits all changes to a local repository.
-    - `git push`: pushes all your committed changes to your Github repository.
+    - `git push`: pushes all your committed changes to your GitHub repository.
   - You can view the website in a browser by using the command `python3 -m http.server` and clicking on the button `Open Browser` on the box that will pop up.
 
 *Forking the GitHub Repository*
 
 If you want to make changes to your repository without affecting it, you can make a copy of it by 'Forking' it. This ensures your original repository remains unchanged.
 
-  1. Find the my [GitHub repository](https://github.com/Bruno-Diego/bdcrypto-portfolio4)
+  1. Find my [GitHub repository](https://github.com/Bruno-Diego/copacabana-pp5)
   2. In the top right corner of the page, click the Fork button (under your account)
   3. Your repository has now been 'Forked' and you have a copy to work on
 
@@ -622,30 +622,30 @@ If you want to make changes to your repository without affecting it, you can mak
 
 Cloning your repository will allow you to download a local version of the repository to be worked on. Cloning can also be a great way to backup your work.
 
-  - Find the my [GitHub repository](https://github.com/Bruno-Diego/bdcrypto-portfolio4)
+  - Find my [GitHub repository](https://github.com/Bruno-Diego/copacabana-pp5)
   - Press the arrow on the Code button
   - Copy the link that is shown in the drop-down
   - Now open Gitpod & select the directory location where you would like the clone created
   - In the terminal type 'git clone' & then paste the link you copied on GitHub
   - Press enter and your clone will be created.
   - You will need to also install all required packages in order to run this application on Heroku, refer to [requirements.txt](requirements.txt)
-    - Command to install this apps requirements is `pip3 install -r requirements.txt`
+    - Command to install this app's requirements is `pip3 install -r requirements.txt`
 
 ## Via Heroku
 
 Deploying the project using Heroku and ElephantSQL:
 
    - Login to [Heroku](https://dashboard.heroku.com/apps) and Create a New App
-   - Give the App a name, it must be unique, and select a region closest to you
+   - Give the App a name (it must be unique), and select a region closest to you
    - Click on 'Create App', this will take you to a page where you can deploy your project
    - Click on the 'Settings' tab at the top of the page. The following step must be completed before deployment. 
-   - On ElephantSQL.com website, create an account by clicking on “Get a managed database today”, select “Try now for FREE” in the TINY TURTLE database plan, select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account, in the Create new team form: add a team name, read and agree to the Terms of Service, select Yes for GDPR, provide the email address and click “Create Team”.
-   - Access your dashboard ElephantSQL, click “Create New Instance”, set up your plan: give your plan a Name, select the Tiny Turtle (Free) plan, you can leave the Tags field blank; Select “Select Region” and choose a data center near you, then click “Review”, check your details are correct and then click “Create instance”.
+   - On the ElephantSQL.com website, create an account by clicking on “Get a managed database today”, select “Try now for FREE” in the TINY TURTLE database plan, select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account, in the Create new team form: add a team name, read and agree to the Terms of Service, select Yes for GDPR, provide the email address and click “Create Team”.
+   - Access your dashboard ElephantSQL, click “Create New Instance”, and set up your plan: give your plan a Name, select the Tiny Turtle (Free) plan, you can leave the Tags field blank; Select “Select Region” and choose a data center near you, then click “Review”, check your details are correct and then click “Create instance”.
    - Return to the ElephantSQL dashboard and click on the database instance name for this project, then click "Details". 
    - Get your ElephantSQL database URL.
-   - Back on Heroku, Scroll down to 'Config Vars' and click 'Reveal Config Vars'. Here the database URL is stored, it is the connection to the database, so this must be copied and stored within env.py as a root level file.
-     - The env.py files is where the projects secret environment variables are stored. This file is then added to a gitnore file so it isn't stored publicly within the projects repository.
-   - Next, the secret key needs to be created within the projects env.py file on GitPod and then added to the Config Vars on Heroku. Once added, go to the settings.py file on GitPod.
+   - Back on Heroku, Scroll down to 'Config Vars' and click 'Reveal Config Vars'. Here the database URL is stored, it is the connection to the database, so this must be copied and stored within env.py as a root-level file.
+     - The env.py file is where the projects secret environment variables are stored. This file is then added to a gitnore file so it isn't stored publicly within the project's repository.
+   - Next, the secret key needs to be created within the project's env.py file on GitPod and then added to the Config Vars on Heroku. Once added, go to the settings.py file on GitPod.
    - Within the [settings.py](settings.py) file you need to import several libraries:
 
     ```python
@@ -656,7 +656,7 @@ Deploying the project using Heroku and ElephantSQL:
         import env
     ```
 
-   - Then, we need to replace the current insecre secret key with ```os.environ.get('SECRET_KEY)'```, that we set witin the env.py file.
+   - Then, we need to replace the current insecure secret key with ```os.environ.get('SECRET_KEY)'```, that we set within the env.py file.
    - Once the secret key is replaced, scroll down to DATABASES to connect to the Postgres database. Comment out the current code and add the following python dictionary: 
 
 ```python
@@ -665,7 +665,7 @@ DATABASES = { 'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 
    - The next step is to connect the project to whitenoise, which is where the static files will be stored. You can find a full explanation of how to install whitenoise [here](http://whitenoise.evans.io/en/stable/)
    - Then on Heroku add to the Config Vars, DISABLE_COLLECTSTATIC = 1, as a temporary measure to enable deployment without any static files, this will be removed when it is time to deploy the full project.
-   - Next we need to tell Django where to store the media and static files. Towards the bottom of settings.py file we can add:
+   - Next, we need to tell Django where to store the media and static files. Towards the bottom of settings.py file, we can add:
 
 ```python
 STATIC_URL = '/static/'
@@ -675,7 +675,7 @@ MEDIA_URL = '/media/'
 ```
 
    - Then we need to tell Django where the templates will be stored. At the top of settings.py, under BASE_DIR (the base directory), add a templates directory and then scroll down to TEMPLATES and add the templates directory variable to 'DIRS': [].
-   - Now we have to add our Heroku Host Name into allowed hosts in settings.py file:
+   - Now we have to add our Heroku Host Name into the allowed hosts in settings.py file:
 
 ```python
 ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
@@ -684,7 +684,7 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
    - Finally, to complete the first deployment set up of the app, create a Procfile so that Heroku knows how to run the project. Within this file add the following: web: gunicorn APP-NAME.wsgi Web tells Heroku to allow web traffic, whilst gunicorn is the server installed earlier, a web services gateway interface server (wsgi). This is a standard that allows Python services to integrate with web servers.
    - Now, go to the 'Deploy' Tab on Heroku. Find the 'Deployment Method' section and choose GitHub. Connect to your GitHub account and find the repo you want to deploy. 
    - Scroll down to the Automatic and Manual Deploys sections. Click 'Deploy Branch' in the Manual Deploy section and waited as Heroku installed all dependencies and deployed the code.
-   - Once the project is finnished deploying, click 'Open App' to see the newly deployed project.
+   - Once the project is finished deploying, click 'Open App' to see the newly deployed project.
    - Before deploying the final draft of your project you must:
    - Remove staticcollect=1 from congifvars within Heroku
    - Ensure DEBUG is set to false in settings.py file or:
@@ -710,7 +710,7 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
 - Click "add statement" after pasting the ARN we copied from the previous page into the ARN input.
 - Click generate policy and copy the policy that displays in a new pop up.
 - Paste this policy into the bucket policy editor and make the following changes: Add a /* at the end of the resource value. Click save.
--  Edit the the cross-origin resource sharing (CORS) and paste in the following text:
+-  Edit the cross-origin resource sharing (CORS) and paste in the following text:
 
         [
             {
@@ -730,7 +730,7 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
 
 ### Creating AWS groups, policies and users
 
-- To manage access to AWS services, go to IAM by clicking the services icon in the top right corner of the page. Click User Groups from the left-hand navigation menu, and then click the Create Group button in the top-right corner. This will establish the group in which our user will be included. 
+- To manage access to AWS services, go to IAM by clicking the services' icon in the top right corner of the page. Click User Groups from the left-hand navigation menu, and then click the Create Group button in the top-right corner. This will establish the group in which our user will be included. 
 
 - Choose a name for your group and click the create policy button on the right. This will open a new page.
 
@@ -749,9 +749,9 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
 
 - Select the policy you just created and then click add permissions at the bottom.
 
-- Create a user for the group by clicking on the user link in the left hand navigation menu.
+- Create a user for the group by clicking on the user link in the left-hand navigation menu.
 
-- Click the add users button on the top right and giving our user a username (e.g. copacabana-staticfiles-user). 
+- Click the add users button on the top right and give our user a username (e.g. copacabana-staticfiles-user). 
 
 - Select programmatic access and then click the next: permissions button.
 
@@ -809,7 +809,7 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
 - Create a file called custom_storages.py in the root directory.
 - import settings and S3Botot3Storage. Create a custom class for static files and one for media files.
 
-- Add the following code to file you created just now
+- Add the following code to the file you created just now
 
         """ Custom storages for AWS file storage. """
         from django.conf import settings
@@ -834,13 +834,13 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
 - Save everything, add, commit and push these changes to make a deployment to Heroku.
 
 - Navigate to S3 and open your bucket. 
-- Click the create folder button on the top right and naming the folder media. This is where we will save all out media files.
+- Click the create folder button on the top right and name the folder media. This is where we will save all our media files.
 
 ### Stripe Setup
 
 - Log into Stripe, click developers and then API keys.
 - Copy the publishable key (STRIPE_PUBLIC_KEY) and the secret key (STRIPE_SECRET_KEY) 
-- Log in to heroku and create 2 new variables in Heroku's config vars, publishable key is STRIPE_PUBLIC_KEY and the secret key is STRIPE_SECRET_KEY and paste values copied from stripe
+- Log in to heroku and create 2 new variables in Heroku's config vars, the publishable key is STRIPE_PUBLIC_KEY and the secret key is STRIPE_SECRET_KEY and paste values copied from stripe
 - To add webhooks go to the WebHooks link in the menu on the left and select the add endpoint option.
 - Add the URL for our deployed sites WebHook, give it a description and then click the add events button and select all events. Click Create endpoint.
 - add the WebHook signing secret to our Heroku config variables as STRIPE_WH_SECRET.
@@ -855,19 +855,19 @@ ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
 
 Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
 
-- The Code Institute **Boutique Ado** walkthrough project provided a lot of the site's original functionality, which was then modified, customized and expanded.
+- The Code Institute's **Boutique Ado** walkthrough project provided a lot of the site's original functionality, which was then modified, customized and expanded.
 
-- The code institute  **I Think Therefore I Blog** walkthrough were also consulted whenever needed.
+- The Code Institute's **I Think Therefore I Blog** walkthrough was also consulted whenever needed.
 
 - The images for this project were taken from [Burst](https://burst.shopify.com/).
 
 - The Favicon for this project was made from [Favicon.io](https://favicon.io/).
 
-- The icons for this project were taken from the [Font Awesome](https://fontawesome.com/) libary.
+- The icons for this project were taken from the [Font Awesome](https://fontawesome.com/) library.
 
 - The fonts for this project were taken from [Google Fonts](https://fonts.google.com/).
 
-- To better understand the code I also used several topics of the [Django documents](https://docs.djangoproject.com/en/4.1/) and countless posts from [Stack Overflow](https://stackoverflow.com/).
+- To better understand the code I also used several topics from the [Django documents](https://docs.djangoproject.com/en/4.1/) and countless posts from [Stack Overflow](https://stackoverflow.com/).
 
 ---
 ## Acknowledgements
